@@ -1,22 +1,24 @@
-# Contexte du projet
-La création de contenu est crucial lorsque l'on veut lancer son site. Il est nécéssaire d'identifier les mots clés sur lesquels vous voulez vous positionner et dans un second temps créér le contenu associé à ces mots clés.
+# Context of the project
+Content creation is crucial when you want to launch your site. It is necessary to identify the keywords on which you want to position yourself and in a second step to create the content associated with these keywords.
 
+In addition to this, you need to know more about it.
 
-La première étape de votre travail constitura la création de la liste des mots clés ainsi que la liste des questions à lesquelles il va falloir répondre à travers les articles à créer.
+The first step of your work will be the creation of the list of keywords as well as the list of questions to be answered through the articles to be created.
 
+In addition to this, you need to know more about it.
 
-Etape 1 - Création de la liste de mots clés
-Pour cela vous allez créer une fonction utilisant la requête suivante: https://importsem.com/query-google-suggestions-api-with-python/ (paramétrez en anglais). A la sortie de cette fonction vous allez récupérer un liste de mot clés en liens avec le mot clé d'input.
+### Step 1 - Creation of the list of keywords
+To do this, you will create a function using the following query: https://importsem.com/query-google-suggestions-api-with-python/ (configure in English). At the end of this function you will retrieve a list of keywords linked to the input keyword.
 
-Exemple: get_list_kw("yoga") =>["yoga","yoga with adriene","yoga mat","yoga nidra","yoga poses","yoga pants"] Ici nous prendrons que 5 mots clé en plus de celui envoyé dans la requête.
+Example: get_list_kw ("yoga") => ["yoga", "yoga with adriene", "yoga mat", "yoga nidra", "yoga poses", "yoga pants"] Here we will take only 5 more keywords of the one sent in the request.
 
-Etape 2 - Identifier les questions
-Dans un second temps vous allez récupérer les questions que les utilisateurs se posent suivants les mots chaque mots clés récupérés avec la library people_also_ask: https://pypi.org/project/people-also-ask/
+### Step 2 - Identify the questions
+In a second step you will retrieve the questions that users ask themselves following the words each keyword retrieved with the people_also_ask library: https://pypi.org/project/people-also-ask/
 
-Etape 3 - Récupérer les réponses aux questions
-Toujours avec la library people_also_ask vous aller utiliser la méthode get_answer afin de récupérer la réponse au questions de l'étape 2.
+### Step 3 - Collect the answers to the questions
+Still with the people_also_ask library, you will use the get_answer method to retrieve the answer to the questions in step 2.
 
-Les 3 premières étapes consistent à créer la data qui va structurer le générateur de texte. Vous trouverez un exemple sur la structure de la donnée attendu dans la partie ressource.
+The first 3 steps consist in creating the data which will structure the text generator. You will find an example on the structure of the expected data in the resource part.
 
-Etape 4 - Génération de texte pour chaque ligne de votre jeu de donnée
-Ici vous allez utiliser soit GPT-J, soit GPT-2 Large afin de générer du contenu pour chaque combinaison de question-réponse afin d'obtenir du contenu pour l'ensemble des mots clés. Pour cela vous allez devoir utiliser Google collab qui vous fournira l'environnement de développement adéquat pour cette tâche gourmande en ressource.
+### Step 4 - Generate text for each row of your data set
+Here you will use either GPT-J or GPT-2 Large to generate content for each question-answer combination to obtain content for all of the keywords. For this you will have to use Google collab which will provide you with the appropriate development environment for this resource-intensive task.
